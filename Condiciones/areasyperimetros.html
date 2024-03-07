@@ -1,0 +1,73 @@
+<html>
+
+<body>
+
+<head>
+<meta charset="utf-8">>
+    
+PRUEBA CON AREAS Y PERIMETROS
+
+</head>
+<br>
+<br>
+
+    <script>
+
+        var dato1=0; dato2=0;
+        var op
+
+    
+        
+        
+        op=parseInt(prompt("ELIGE TU OPCIÓN:  \n  1. CÍRCULO  \n  2. CUADRADO   \n  3. RECTÁNGULO "));
+        
+        
+        
+
+        
+        if (op==1) {
+            dato1=parseInt (prompt("Dame el radio"));
+            let area = Math.PI*(dato1*dato1);
+            document.write("El área del circulo es: " + area);
+            
+        
+        } 
+        
+            
+        else if (op==2) {
+            dato1=parseInt (prompt("Dame un lado"));
+            dato2=parseInt (prompt("Dame el otro lado"));
+            let area = dato1*dato2;
+            document.write("El área del cuadrado es: " + area);
+            
+        } 
+ 
+
+            
+        else if (op==3) {
+            dato1=parseInt (prompt("Dame la base"));
+            dato2=parseInt (prompt("Dame la altura"));
+            let area = dato1*dato2;
+            document.write("El área del rectangulo: " + area);
+            
+        } 
+ 
+ 
+ 
+ else {
+    alert("Inválido!");
+ }
+
+        
+
+
+
+
+
+    </script>
+
+
+</body>
+
+
+</html>

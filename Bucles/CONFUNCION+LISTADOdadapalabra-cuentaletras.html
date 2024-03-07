@@ -1,0 +1,44 @@
+<html>
+
+<body>
+
+<head>CON FUNCION Y LISTADO: DADA UNA PALABRA, SACAR LAS LETRAS DE ESA PALABRAS.</head>
+<br>
+<br>
+
+    <script>
+
+    function letraporletra(){
+
+   
+        var palabra="";
+        var i=0
+
+        document.write("<ul>");
+
+            palabra=prompt("DAME LA PALABRA");
+              
+            document.write("La Palabra es ", palabra,"<br>");
+
+            while(i<palabra.length){
+
+                document.write("<li>",palabra.charAt(i),"</li>","<br>");
+                i=i+1
+            }
+
+        document.write("</ul>");
+    }
+
+       
+    
+    </script>
+
+    <script>
+        letraporletra();
+    </script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <script>
+        var corredores = ["Luis", "Roberto", "Juan", "Ana"];
+        var tiempo = [180, 200, 12, 128];
+        var i = 0;
+        var participante = prompt("Dame el corredor: ");
+//             4         4
+        while (i < corredores.length) {    
+            if (participante == corredores[i]) {                                                   
+                document.write("El participante ", corredores[i], " ha hecho un tiempo de ", tiempo[i], " minutos");
+                
+        break; // Termina el bucle una vez que se ha encontrado el corredor
+        }   
+            i = i + 1
+           
+        }
+        
+
+        if (i == corredores.length) {
+            document.write("Corredor no encontrado");
+        }
+</script>
+</body>
+</html>

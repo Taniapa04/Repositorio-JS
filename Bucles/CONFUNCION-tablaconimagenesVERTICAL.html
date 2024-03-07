@@ -1,0 +1,51 @@
+<html>
+
+<body>
+
+<head>CON FUNCION + TABLA: CON IMAGENES EN VERTICAL.</head>
+<br>
+<br>
+
+    <script>
+
+    function galeriaVER(){
+
+   
+        var i;
+        
+        i=0;
+
+            var limite;
+            limite=parseInt(document.getElementById("texto").value);
+
+            document.write("El numero de imagenes es: ", limite);
+
+
+            document.write("<table border=1>");
+
+            while(i<limite){
+
+                document.write("<tr><td><img src=mapachealbino.webp></td></tr>");
+                i=i+1;
+              
+            }
+
+            document.write("</table>");
+    
+        }
+
+
+    
+    </script>
+
+
+   
+        <input type="text" id="texto">
+        <input type="button" onclick="galeriaVER()" value="GALERIA">
+    
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<body>
+
+<head>CON FUNCION + TABLA: CON IMAGENES.</head>
+<br>
+<br>
+
+    <script>
+
+    function galeriaHOR(){
+
+   
+        var i;
+        
+        i=0;
+
+            var limite;
+            limite=parseInt(document.getElementById("texto").value);
+
+            document.write("El numero de imagenes es: ", limite);
+
+
+            document.write("<table border=1><tr>");
+
+            while(i<limite){
+
+                document.write("<td><img src=mapachealbino.webp></td>");
+                i=i+1;
+              
+            }
+
+            document.write("</tr></table>");
+    
+        }
+
+
+    
+    </script>
+
+
+   
+        <input type="text" id="texto">
+        <input type="button" onclick="galeriaHOR()" value="GALERIA">
+    
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+<html>
+
+<body>
+
+<head>CON FUNCION: REPITE ESA PALABRA LAS VECES QUE LETRAS TIENE.</head>
+<br>
+<br>
+
+    <script>
+
+    function letraporletra(){
+
+   
+        var palabra="";
+        var i=0
+
+
+            palabra=prompt("DAME LA PALABRA");
+              
+            document.write("La Palabra es ", palabra,"<br>");
+
+           
+
+            while(i<palabra.length){
+
+                document.write("<li>",palabra.charAt(i),"</li>","<br>");
+                i=i+1
+            }
+
+       
+        
+        document.write("La Palabra tiene: ", palabra,"<br>");
+    }
+
+       
+    
+    </script>
+
+    <script>
+      <button onclick="CLICK()"></button>
+    </script>
+
+
+</body>
+
+
+</html>
